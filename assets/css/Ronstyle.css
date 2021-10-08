@@ -1,0 +1,142 @@
+
+/* my custom settings for the main page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+a {
+  color: rgb(214, 194, 12);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+
+main {
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+
+.main-header {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 5px;
+  background: teal;
+  color: beige;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+}
+
+.mainName,
+.mug {
+  align-self: center;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.aboutMe {
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  max-width: 100%;
+  background: teal;
+  color: antiquewhite;
+
+}
+
+#projects {
+  display: flex;
+  background-color: darkseagreen;
+}
+
+.project {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 20px;
+
+  background: teal;
+  color: #fff;
+}
+
+.project header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.project img {
+  width: 100%;
+  min-width: 400px;
+}
+
+/*   new addition to original code   */
+
+.mainProject {
+  flex: 1 0 0;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
+  border-width: 20px;
+
+  background: teal;
+  color: #fff;
+}
+
+.mainProject header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.mainProject img {
+  width: 100%;
+  min-width: 300px;
+}
+
+/* footer format stuff */
+
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  background-color: teal;
+}
+
+footer h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  font-style: italic;
+
+}
+/* mobile option */
+@media screen and (max-width: 780px) {
+  #projects {
+    flex-direction: column;
+  }
+}
